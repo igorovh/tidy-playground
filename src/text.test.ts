@@ -15,6 +15,9 @@ test("truncate", () => {
 
 test("wordCount", () => {
   expect(wordCount("one two three")).toBe(3);
+  expect(wordCount("")).toBe(0);
+  expect(wordCount("   ")).toBe(0);
+  expect(wordCount("  hello  ")).toBe(1);
 });
 
 test("titleCase", () => {
