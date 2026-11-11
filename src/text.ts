@@ -9,7 +9,8 @@ export function slugify(title: string): string {
 /** Shortens text to at most `max` characters, ending with "…" when it was cut. */
 export function truncate(text: string, max: number): string {
   if (text.length <= max) return text;
-  return `${text.slice(0, max)}…`;
+  if (max <= 0) return "";
+  return `${text.slice(0, max - 1)}…`;
 }
 
 /** Counts words separated by whitespace. */

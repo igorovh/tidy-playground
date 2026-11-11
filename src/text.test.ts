@@ -7,6 +7,10 @@ test("slugify", () => {
 
 test("truncate", () => {
   expect(truncate("short", 10)).toBe("short");
+  expect(truncate("hello world", 5)).toBe("hell…");
+  expect(truncate("hello world", 5).length).toBeLessThanOrEqual(5);
+  expect(truncate("hello", 5)).toBe("hello");
+  expect(truncate("hello world", 1)).toBe("…");
 });
 
 test("wordCount", () => {
