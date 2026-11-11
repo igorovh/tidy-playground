@@ -14,7 +14,9 @@ export function truncate(text: string, max: number): string {
 
 /** Counts words separated by whitespace. */
 export function wordCount(text: string): number {
-  return text.split(/\s+/).length;
+  const trimmed = text.trim();
+  if (trimmed === "") return 0;
+  return trimmed.split(/\s+/).length;
 }
 
 /** Capitalizes the first letter of every word: "hello world" → "Hello World". */
