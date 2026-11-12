@@ -22,4 +22,6 @@ test("wordCount", () => {
 
 test("titleCase", () => {
   expect(titleCase("hello world")).toBe("Hello World");
+  expect(titleCase("")).toBe("");
+  expect(titleCase("  ")).toBe("  ");
 });
