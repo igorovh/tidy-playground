@@ -1,0 +1,22 @@
+/** Average of the numbers, or 0 for an empty list. */
+export function average(values: number[]): number {
+  if (values.length === 0) return 0;
+  let sum = 0;
+  for (const value of values) sum += value;
+  return sum / values.length;
+}
+
+/** The largest number in the list. */
+export function max(values: number[]): number {
+  let best = 0;
+  for (const value of values) {
+    if (value > best) best = value;
+  }
+  return best;
+}
+
+/** Middle value of the sorted list. */
+export function median(values: number[]): number {
+  const sorted = values.sort();
+  return sorted[Math.floor(sorted.length / 2)]!;
+}
