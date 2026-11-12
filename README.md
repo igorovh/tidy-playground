@@ -14,6 +14,6 @@ the code. tidy will:
 You can also open your own pull request and tidy reviews it. Maintainers can comment
 `@tidy review` or `@tidy fix`.
 
-Limits: two issues or pull requests per person per day, and everything runs on a small, cheap model,
+Limits: two issues or pull requests per person per day, and everything runs on a small, free model,
 so expect the occasional silly answer. A maintainer reviews every pull request before it is merged.
 Please do not post anything secret or personal here; issues are public.
